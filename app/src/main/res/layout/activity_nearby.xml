@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Nearby">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"/>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_nearby"
+        android:orientation="vertical"
+        >
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="4dp"
+                android:layout_height="460dp"
+                android:layout_weight="0.33"
+                android:background="@mipmap/food"
+                android:elevation="10dp">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="29dp"
+                    android:layout_marginTop="55dp"
+                    android:background="#66a367"
+                    android:elevation="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="FOOD"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="460dp"
+                android:layout_weight="0.33"
+                android:background="@mipmap/sightsee">
+
+                <TextView
+                    android:layout_width="103dp"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="85dp"
+                    android:background="#a9ce73"
+                    android:elevation="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="SIGHT SEEING"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="460dp"
+                android:layout_weight="0.33"
+                android:background="@mipmap/pg">
+
+                <TextView
+                    android:layout_width="96dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="125dp"
+                    android:background="#5ca1c3"
+                    android:elevation="20dp"
+                    android:gravity="center_horizontal"
+                    android:text="PG'S"
+                    android:textColor="#ffffff" />
+            </FrameLayout>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:id="@+id/food"
+                android:layout_width="117dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle1"
+                android:elevation="15dp"
+                android:onClick="food"
+                android:src="@mipmap/food_icon" />
+
+
+            <ImageButton
+                android:id="@+id/sight"
+                android:layout_width="116dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/circle2"
+                android:elevation="15dp"
+                android:onClick="sight"
+                android:src="@mipmap/sight_icon" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="107dp"
+                android:layout_height="110dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/circle1"
+                android:elevation="15dp"
+                android:src="@mipmap/home_icon" />
+        </LinearLayout>
+
+            </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
